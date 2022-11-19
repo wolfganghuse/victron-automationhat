@@ -1,0 +1,41 @@
+#### Relay 1-3 and Input 1-3 Mapping for Automationhat (Input 3 for Shutdown Pin)
+#### Relay 4-6 and Input 4-6 not used here
+
+### for use by the RpiGpio package on Raspberry PI platforms ONLY
+
+# This is a list of GPIO pins, set by the script /etc/rcS.d/S90gpio_pins.sh
+# They are documented at: https://github.com/victronenergy/venus/wiki/bbb-gpio
+# Format: <pin_number> <direction: in/out> <name>
+#
+# The <name> part is used to create an symlink in /dev/gpio.
+
+# relays are active HIGH
+# Relay 1   GPIO 13 / header pin 33
+13  out relay_1
+# Relay 2   GPIO 19 / header pin 35
+19  out relay_2
+# Relay 3   GPIO 16 / header pin 36
+16  out relay_3
+# Relay 4   GPIO 22 / header pin 15
+22  out relay_4
+# Relay 5   GPIO 23 / header pin 16
+23  out relay_5
+# Relay 6   GPIO 24 / header pin 18
+24  out relay_6
+
+# these have pull UPs
+# Digital input 1   GPIO 26 / header pin 37
+26   in digital_input_1
+# Digital input 2   GPIO 20 / header pin 38
+20   in digital_input_2
+# Digital input 3   GPIO 18 / header pin 12
+18  in digital_input_3
+
+# Digital input 4   GPIO 27 / header pin 13
+27  in digital_input_4
+# Digital input 5   GPIO 25 / header pin 22
+22  in digital_input_5
+#### Gracefull shutdown input
+#### Note this input is NOT added to the available I/O used by Venus OS !!!!
+# GPIO 21 / header pin 40
+21  in digital_input_6
