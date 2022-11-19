@@ -28,14 +28,14 @@
 26   in digital_input_1
 # Digital input 2   GPIO 20 / header pin 38
 20   in digital_input_2
-# Digital input 3   GPIO 18 / header pin 12
-18  in digital_input_3
+# Digital input 3   GPIO 21 / header pin 40
+21  in digital_input_3
 
 # Digital input 4   GPIO 27 / header pin 13
 27  in digital_input_4
-# Digital input 5   GPIO 25 / header pin 22
-22  in digital_input_5
+# Digital input 5   GPIO 11 / header pin 23
+21  in digital_input_5
 #### Gracefull shutdown input
 #### Note this input is NOT added to the available I/O used by Venus OS !!!!
-# GPIO 21 / header pin 40
-21  in digital_input_6
+# GPIO 25 / header pin 22
+25  in digital_input_6
