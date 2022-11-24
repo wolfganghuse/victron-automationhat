@@ -25,3 +25,6 @@ Install AutomationHat Library
 
   pip3 install AutomationHat
   
+Truma Service
+
+  pip3 install inetbox_py[truma_service]
