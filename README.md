@@ -6,6 +6,8 @@ Adds support to Victron Venus OS (on Raspberry Pi) for Pimoroni AutomationHat
 Edit /u-boot/config.txt and add the following line:
 
   dtparam=i2c_arm=on
+  enable_uart=1
+
 
 Add the following line to /data/rc.local:
 
