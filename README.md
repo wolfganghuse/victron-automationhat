@@ -11,3 +11,15 @@ Add the following line to /data/rc.local:
 
   modprobe i2c-dev
   
+Update Packages
+
+  opkg update && opkg install gcc make pkgconfig binutils python3-pip
+
+Create symlink for cc (not needed for Large Image)
+
+  ln -s /usr/bin/arm-ve-linux-gnueabi-gcc /usr/bin/cc
+  
+Install AutomationHat Library
+
+  pip3 install AutomationHat
+  
