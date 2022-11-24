@@ -13,7 +13,7 @@ Add the following line to /data/rc.local:
   
 Update Packages
 
-  opkg update && opkg install gcc make pkgconfig binutils python3-pip
+  opkg update && opkg install gcc make pkgconfig binutils python3-pip python3-spidev
 
 Create symlink for cc (not needed for Large Image)
 
